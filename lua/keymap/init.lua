@@ -13,5 +13,4 @@ vim.keymap.set('n', '<C-S>', ':w!<CR>', { noremap = true })
 vim.keymap.set("n", "<leader>%", ":vs<CR>", {noremap = true})
 vim.keymap.set("n", '<leader>"', ":sp<CR>", {noremap = true})
 
--- set highlight NormalFloat
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1e222a" })
+

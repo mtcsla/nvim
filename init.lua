@@ -1,6 +1,7 @@
 require("plugins.colors")
 require("keymap")
 require("plugins")
+require("highlights")
 
 vim.opt.fillchars = { eob = " " }
 vim.cmd "set number"
@@ -13,5 +14,4 @@ vim.api.nvim_create_autocmd("BufEnter", {
 		vim.cmd "set nowrap"
 	end,
 })
-
 

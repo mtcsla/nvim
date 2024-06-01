@@ -1,16 +1,18 @@
 local function setup()
 	local lspconfig = require('lspconfig')
 
+	local function on_attach(client, bufnr)
+		require("nvim-navic").attach(client, bufnr)
+	end
+
 	lspconfig.rust_analyzer.setup {
 	  -- Server-specific settings. See `:help lspconfig-setup`
+	  on_attach = on_attach,
 	  settings = {
 	    ['rust-analyzer'] = {},
 	  },
 	}
 
-	local function on_attach(client, bufnr)
-		require("nvim-navic").attach(client, bufnr)
-	end
 
 	require'lspconfig'.lua_ls.setup {
 	  on_attach = on_attach,

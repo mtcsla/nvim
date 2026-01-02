@@ -22,9 +22,6 @@ require("nvim-tree").setup {
 	renderer = {
 		root_folder_label = false
 	},
-	view = {
-		hide_root_folder = true
-	},
 }
 
 

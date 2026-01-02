@@ -12,6 +12,7 @@ vim.keymap.set('n', '<leader>gsh', builtin.git_stash, {})
 vim.keymap.set('n', '<leader>gbr', builtin.git_branches, {})
 
 vim.keymap.set('n', '<leader>gc', builtin.git_commits, {})
+vim.keymap.set('n', '<leader>fd', ":ErrorLensTelescope<CR>")
 
 -- something is overriding the highlight groups later, so this needs to be deferred a second or few
 vim.defer_fn(function()
